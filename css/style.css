@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, grey, rgb(84, 83, 83));
+    background-repeat: no-repeat;
+    height:100vh ;
+    width:100%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container{
+   border: 1px solid black;
+   padding: 20px;
+   align-items: center;
+   width: 20rem;
+   text-align: center;
+   height:25rem;
+   border-radius: 2rem;
+   margin:2rem;
+   border-style: double dashed none;
+   background-image: linear-gradient(180deg, rgb(152, 138, 138), rgb(102, 94, 94));
+}
+
+h1{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.weight{
+    padding-bottom: 1rem;  
+    text-align: center;
+}
+#kg{
+    height:2rem;
+    width:12rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+.height{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+#l{
+    height:2rem;
+    width:12rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+.click{
+    padding-bottom: 1rem;
+}
+#calculate{
+    width:5rem;
+    height:2rem;
+    border-radius: 2rem;
+    
+}
+#calculate:hover{
+    background: rgb(124, 130, 124);
+}
+#clear{
+    width:5rem;
+    height:2rem;
+    border-radius: 2rem;
+}
+#clear:hover{
+    background: rgb(124, 130, 124);
+}
+.answer{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+#ans{
+    height:2rem;
+    width:12rem;
+    text-align: center;
+}
