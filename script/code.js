@@ -5,10 +5,10 @@ let sentence = document.querySelector(".statement")
 let enter = document.querySelector("#calculate");
 
 enter.addEventListener("click", ()=>{
-    let tall = height.value;
-    let mass = weight.value;
-    let BMI = mass/(tall * (tall/10000));
-    BMI = BMI.toFixed(2)
+    let tall = parseFloat(height.value);
+    let mass = parseFloat(weight.value);
+    let BMI = mass / Math.pow(tall / 100, 2);
+    BMI = BMI.toFixed(1)
     result.innerText = BMI;
 
     if(BMI < 18.5){
@@ -17,7 +17,7 @@ enter.addEventListener("click", ()=>{
         sentence.innerText = "normal";
     }else if((BMI > 25) && (BMI <= 29.9)){
         sentence.innerText = "overweight";
-    }else{
+    }else if (BMI > 30){
         sentence.innerText = "obese";
     }
 })
